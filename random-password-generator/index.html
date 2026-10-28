@@ -5,9 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password generator</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
   </head>
 
-  <body>
-    Random password generator
+  <body class="min-h-screen min-w-[1000px] bg-[#101b16] font-sans text-[#f0fdf4]">
+    <div class="mx-auto flex min-h-screen w-[920px] flex-col">
+      <header class="flex h-24 shrink-0 items-center justify-between border-b border-[#86efac]/10">
+        <nav>
+          <a
+            href="../index.html"
+            class="inline-flex items-center gap-2 rounded-full border border-[#86efac]/15 bg-white/5 px-4 py-2.5 text-xs font-medium text-[#86efac] transition-colors hover:border-[#86efac]/35 hover:bg-[#86efac]/10 hover:text-[#f0fdf4] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#86efac] motion-reduce:transition-none"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M19 12H5m7-7-7 7 7 7" />
+            </svg>
+            Back to projects
+          </a>
+        </nav>
+        <span class="text-[10px] font-medium uppercase tracking-[2.5px] text-[#86efac]/65">The everyday collection / 02</span>
+      </header>
+
+  <div class="flex flex-1 items-center justify-center py-10">
+       <div
+      class="w-130  border border-[#2e3e37] bg-[#192c22] rounded-3xl"
+    >
+      <div class="pl-9 pt-9">
+        <div
+          class="size-11 bg-[#214630] rounded-xl flex justify-center items-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="23"
+            height="23"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#85efac"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-lock-keyhole preview-icon"
+          >
+            <circle cx="12" cy="16" r="1" />
+            <rect x="3" y="10" width="18" height="12" rx="2" />
+            <path d="M7 10V7a5 5 0 0 1 10 0v3" />
+          </svg>
+        </div>
+      </div>
+      <div class="text-[#F0FDF4] text-[28px] pt-6 pl-9">Password generator</div>
+      <div class="text-sm text-[#A4B9AD] pl-9 pt-2">
+        A strong password. One click away.
+      </div>
+      <div class="text-xs text-[#A4B9AD] pt-8 pl-9">Your password</div>
+      <div class="pl-9 pt-3">
+        <div
+          class="w-112 h-16 bg-[#101B16] rounded-xl border border-[#28322d] flex justify-between items-center pl-4 pr-3"
+        >
+          <div class="text-[#BBF7D0] text-lg">K9#mQ2&xR7!vN4@p</div>
+          <button class="w-[55px] h-[31px] rounded-lg bg-[#1c2722] text-[#DCECE2] text-xs flex justify-center items-center">Copy</button>
+        </div>
+      </div>
+      <div class="text-[#A4B9AD] text-xs pl-9 pt-3">
+        Uses letters, numbers, and symbols.
+      </div>
+      <div class="flex justify-between pl-9 pt-6 pr-[34px]">
+        <div class="text-[#DCECE2] text-sm">Password length</div>
+        <div class="text-[#86EFAC] text-lg">16</div>
+      </div>
+      <div class="pl-9 pt-4">
+        <input
+          type="range"
+          min="8"
+          max="24"
+          value="16"
+          class="w-112 accent-[#4ADE80] pl-9 pr-[34px]"
+          id=""
+        />
+      </div>
+      <div
+        class="flex justify-between text-[#8AA294] text-xs pt-1 pl-9 pr-[34px]"
+      >
+        <div>8</div>
+        <div>24</div>
+      </div>
+      <div class="pt-7 pl-9">
+        <div
+          class="w-112 h-12 bg-[#4ADE80] rounded-lg text-sm text-[#102418] flex justify-center items-center"
+        >
+          Generate password
+        </div>
+      </div>
+      <div
+        class="text-[#8AA294] text-xs flex justify-center pt-5 pl-9 pr-[34px] pb-[36.5px]"
+      >
+        Generated in your browser. Never saved.
+      </div>
+    </div>
+  </div>
+
+    </div>
   </body>
-</html>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
