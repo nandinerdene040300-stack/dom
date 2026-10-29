@@ -69,25 +69,25 @@
         <div
           class="w-112 h-16 bg-[#101B16] rounded-xl border border-[#28322d] flex justify-between items-center pl-4 pr-3"
         >
-          <div class="text-[#BBF7D0] text-lg">K9#mQ2&xR7!vN4@p</div>
-          <button class="w-[55px] h-[31px] rounded-lg bg-[#1c2722] text-[#DCECE2] text-xs flex justify-center items-center">Copy</button>
+          <input readonly type="text"  spellcheck="false" autocomplete="off" id="show-generated-password" class="flex-1 bg-transparent py-2 font-mono text-ly " >
+          <button id="copy-generated-password" class="w-[55px] h-[31px] rounded-lg bg-[#1c2722] text-[#DCECE2] text-xs flex justify-center items-center active:scale-90 translate duration-300 ease-in ">Copy</button>
         </div>
       </div>
-      <div class="text-[#A4B9AD] text-xs pl-9 pt-3">
+      <div id="message" class="text-[#A4B9AD] text-xs pl-9 pt-3">
         Uses letters, numbers, and symbols.
       </div>
       <div class="flex justify-between pl-9 pt-6 pr-[34px]">
         <div class="text-[#DCECE2] text-sm">Password length</div>
-        <div class="text-[#86EFAC] text-lg">16</div>
+        <output id="password-length-output" for="length" class="font-mono text-lg text-[#86efac]">16</output>
       </div>
-      <div class="pl-9 pt-4">
+      <div class="pl-9 pr-[34px] pt-4">
         <input
           type="range"
           min="8"
           max="24"
           value="16"
-          class="w-112 accent-[#4ADE80] pl-9 pr-[34px]"
-          id=""
+          class="w-full accent-[#4ADE80]  "
+          id="password-length-range-input"
         />
       </div>
       <div
@@ -97,11 +97,12 @@
         <div>24</div>
       </div>
       <div class="pt-7 pl-9">
-        <div
-          class="w-112 h-12 bg-[#4ADE80] rounded-lg text-sm text-[#102418] flex justify-center items-center"
+        <button
+        id="generate-password"
+          class="w-112 h-12 bg-[#4ADE80] rounded-lg text-sm text-[#102418] flex justify-center items-center translate duration-300 ease-in active:scale-90"
         >
           Generate password
-        </div>
+      </button>
       </div>
       <div
         class="text-[#8AA294] text-xs flex justify-center pt-5 pl-9 pr-[34px] pb-[36.5px]"
