@@ -12,7 +12,7 @@ const formatTime = (startTime) => {
     const seconds = Math.floor(startTime % 60).toString().padStart(2, "0");
     const minutes = Math.floor((startTime % 3600) /60).toString().padStart(2, "0");
     const hours =Math.floor(startTime /3600).toString().padStart(2, "0");
-    
+
     displayHours.textContent = hours;
     displayMinutes.textContent = minutes;
     displaySeconds.textContent = seconds;
