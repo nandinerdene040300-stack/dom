@@ -19,7 +19,7 @@ const changeTextColor = (textcolor) => {
   texthoyr.classList.remove("text-[#F4F4F5]", "text-black");
   texthoyr.classList.add(textcolor);
   textgurav.classList.remove("text-[#F4F4F5]", "text-black");
-  textgurav.classList.add(textcolor);ﬁ
+  textgurav.classList.add(textcolor);
 };
 
 const startGame = () => {
