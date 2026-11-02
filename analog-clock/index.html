@@ -26,13 +26,20 @@
         <span class="text-[10px] font-medium uppercase tracking-[2.5px] text-[#748174]">The everyday collection / 05</span>
       </header>
 
-<div class="flex flex-1 items-center justify-center py-10">
-         <div class="flex justify-center items-center flex-col gap-8">
-      <div class="text-[#7B887C] text-xs">A MOMENT IN TIME</div>
-      <div class="size-98 rounded-[999px] bg-[#e9e7df] flex justify-center items-center">
-        <div class="size-90 rounded-[999px] bg-[#fcfbf7]"></div>
-      </div>
-    </div>
+      <div class="flex flex-1 items-center justify-center py-10">
+        <div class="flex justify-center items-center flex-col gap-8">
+          <div class="text-[#7B887C] text-xs">A MOMENT IN TIME</div>
+          <div class="size-98 rounded-[999px] bg-[#e9e7df] flex justify-center items-center">
+            <div id="clock" class="size-90 rounded-[999px] bg-[#fcfbf7] relative">
+              <div id="markers" class="absolute inset-0"></div>
+              <div id="numbers" class="absolute inset-0 font-serif text-xl sm:text-2xl"></div>
+              <div id="hour-hand" class="w-[8px] h-[110px] absolute rounded-full left-1/2 bottom-1/2 bg-[#253B35] origin-bottom -translate-x-1/2"></div>
+              <div id="minute-hand" class="absolute left-1/2 bottom-1/2 w-[6px] h-[145px] bg-[#253B35] rounded-full origin-bottom -translate-x-1/2"></div>
+              <div id="second-hand" class="absolute left-1/2 bottom-1/2 w-[3px] h-[155px] bg-[#C47E57] rounded-full origin-bottom -translate-x-1/2"></div>
+              <div class="absolute left-1/2 bottom-1/2 size-[15px] bg-[#C47E57] rounded-full -translate-x-1/2 -translate-y=1/2"></div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <footer class="flex h-16 shrink-0 items-center justify-between border-t border-[#253b35]/10 text-[10px] text-[#748174]">
@@ -40,26 +47,4 @@
       </footer>
     </div>
   </body>
-</html> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+</html>
