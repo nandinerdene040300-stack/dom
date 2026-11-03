@@ -25,13 +25,13 @@
         <span class="text-[10px] font-medium uppercase tracking-[2.5px] text-[#d9f99d]/65">The everyday collection / 03</span>
       </header>
 
-      <div class="flex items-start justify-start pt-10 flex-col">
+      <div class="flex items-start justify-between pt-10 flex-col">
         <div class="w-310 h-26 flex gap-[434px]">
           <div class="w-155 h-[65px]">
             <div class="text-[#F4F4F5] text-3xl pb-3">Color palettes.</div>
             <div class="text-[#A1A1AA] text-sm pb-[39px]">Generated shades with Tailwind color names. Click a shade to copy its HEX background color.</div>
           </div>
-          <button class="w-[186px] h-12 bg-[#D9F99D] flex justify-center items-center rounded-xl gap-2 text-[#09090B] active:scale-90 translate duration-300 ease-in">
+          <button id="shuffle-colors" type="button" class="w-[186px] h-12 bg-[#D9F99D] flex justify-center items-center rounded-xl gap-2 text-[#09090B] active:scale-90 translate duration-300 ease-in">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,23 +56,30 @@
           </button>
         </div>
         <div class="border-solid border-[#A1A1AA] w-310 border-t"></div>
-        <div class="text-[#A1A1AA] text-xs flex justify-between pt-5 gap-[978px]">
-          <div>100 → 950 · LIGHT TO DARK</div>
-          <div>Ready to explore.</div>
+        <div class="text-[#A1A1AA] w-full text-xs flex justify-between items-center pt-5 ">
+          <span>100 → 950 · LIGHT TO DARK</span>
+          <span id="status">Ready to explore.</span>
         </div>
       </div>
-      <div class="space-y-7 mt-5">
-        <div class="">
-          <h4>Red</h4>
-          <div class="text-sm text-white flex gap-3">
-            <div class="h-[107px] flex justify-center items-center flex-col">
-              <div class="w-[113.2px] h-16 rounded-xl bg-[#FDE3E3]"></div>
-              <div class="text-[#D4D4D8] text-xs pt-2">100</div>
-              <div class="text-[#A1A1AA] text-[9px]">#FDE3E3</div>
-            </div>
-          </div>
-        </div>
+      <div id="colors" class="space-y-7 mt-5">
       </div>
     </div>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
